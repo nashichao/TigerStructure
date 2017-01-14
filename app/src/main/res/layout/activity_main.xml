@@ -1,18 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.v7.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.practice.tiger.tigerstructure.MainActivity">
+    android:isScrollContainer="true"
+    android:orientation="vertical"
+    tools:context="com.practice.tiger.tigerownproject.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"/>
-</RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:orientation="vertical"
+            app:divider="@color/colorAccent"
+            tools:context="com.practice.tiger.tigerownproject.MainActivity">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/to_main_recycler_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="由普通RecyclerView实现的瀑布流"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/to_header_recycler_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="带有头部的RecyclerView"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/to_drag_recycler_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="滑动删除的RecyclerView"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/to_navigation_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="侧滑菜单栏"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/to_property_animation_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="属性动画"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/to_circle_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圆形progressbar"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/to_sliding_price_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="滑动的价格标签"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/to_hori_simple_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简单的横向Progressbar"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/to_gradient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="渲染"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"/>
+
+            <android.support.v7.widget.AppCompatButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="null"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+</android.support.v7.widget.LinearLayoutCompat>

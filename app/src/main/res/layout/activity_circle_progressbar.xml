@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tiger="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_circle_progressbar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.practice.tiger.tigerstructure.acitivity.CircleProgressbarActivity">
+
+    <com.practice.tiger.tigerownproject.customview.CircleProgressbar
+        android:id="@+id/circle_progressbar_1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/darker_gray"
+        tiger:max="100"
+        tiger:roundColor="#ffff00"
+        tiger:roundProgressColor="#ff0000"
+        tiger:roundWidth="10dp"
+        tiger:style="FILL"
+        tiger:textColor="#00ff00"
+        tiger:textShow="true"
+        tiger:textSize="12sp"/>
+
+</RelativeLayout>
